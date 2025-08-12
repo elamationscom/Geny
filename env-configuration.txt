@@ -1,0 +1,38 @@
+# ====================================
+# .env.local Configuration Template
+# ====================================
+# Copy this content to a file named .env.local in your project root
+
+# Supabase Configuration (Client-side accessible)
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url_here
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key_here
+
+# AI API Keys (Server-side only)
+GEMINI_API_KEY=your_gemini_api_key_here
+OPENROUTER_API_KEY=your_openrouter_api_key_here
+
+# App Configuration (Client-side accessible)
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+
+# Social Media OAuth Configuration (Server-side only)
+INSTAGRAM_CLIENT_ID=your_instagram_client_id_here
+INSTAGRAM_CLIENT_SECRET=your_instagram_client_secret_here
+LINKEDIN_CLIENT_ID=your_linkedin_client_id_here
+LINKEDIN_CLIENT_SECRET=your_linkedin_client_secret_here
+FACEBOOK_CLIENT_ID=your_facebook_client_id_here
+FACEBOOK_CLIENT_SECRET=your_facebook_client_secret_here
+
+# NextAuth Configuration (for future authentication features)
+NEXTAUTH_SECRET=your_nextauth_secret_here
+NEXTAUTH_URL=http://localhost:3000
+
+# ====================================
+# IMPORTANT NOTES:
+# ====================================
+# 1. Variables prefixed with NEXT_PUBLIC_ are exposed to the browser
+# 2. Variables without NEXT_PUBLIC_ are server-side only and secure
+# 3. Never commit this file to version control
+# 4. For production, replace localhost URLs with your actual domain
+# 5. Replace all placeholder values with your actual API keys and secrets
+# 6. Keep this template updated as new environment variables are added
